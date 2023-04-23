@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/weather_project.css" />
+    <script
+      src="https://kit.fontawesome.com/74aa82c8ab.js"
+      crossorigin="anonymous"
+    ></script>   
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather App by WP</title>
+  </head>
+
+  <body>
+    <button type="button" class="btn btn-success" id="current-location-button">Current Location</button>
+    <div class="container">
+      <form class="form" id="search-form">
+        <div class="row">
+          <div class="col-4">
+            <input type="text" 
+            placeholder="Enter your city" 
+            autofocus="on"
+            autocomplete="off"
+            class="form-control shadow-sm"
+            id="city-input"
+            />
+          </div>
+          <div class="col-2">
+            <input
+              type="submit"
+              value="Search"
+              class="form-control btn btn-primary shadow-sm"
+            />
+          </div>        
+      </form>
+          <div class="col-6">
+           <p class="find">
+            <i class="fa-regular fa-hand-point-left hand"></i> Find your WEATHER
+          HERE
+           </p>
+          </div>
+          </div>
+              
+      <div class="row">
+        <div class="col-4">
+          <h1 class="city" id="current-city">Yangon</h1>
+          <ul class="today">
+            <li class="today" id="current-date">Wednesday, March 22</li>
+            <li class="current-time" id="current-time">2:20 PM</li>
+          </ul>
+        </div>
+
+        <div class="col-4">
+          <div class="current-weather">
+              <img src = "https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" class="today-weather-icon">
+              <span class="current-temperature" id="temperature">82</span>
+              <span class="units">
+              <a href="#" id="fahrenheit-link">&degF</a> |
+              <a href="#" id="celsius-link">&degC</a>
+              </span>
+          </div>    
+        </div>
+
+        <div class="col-4">
+           <p class="high-low">H: <span id="high-temp">98</span>&deg L: <span id="low-temp">74</span>&deg</p>
+          <ul class="hw">           
+            <li>Humidity: <span id="humidity">72</span>%</li>
+            <li>Wind: <span id="wind">11</span>mph</li>
+          </ul>          
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <span class="hour">
+            <p>
+              <strong>98&deg</strong> <br />
+              3 PM
+            </p>
+          </span>
+        </div>
+
+        <div class="col">
+          <span class="hour">
+            <p>
+              <strong>97&deg</strong> <br />
+              4 PM
+            </p>
+          </span>
+        </div>
+
+        <div class="col">
+          <span class="hour">
+            <p>
+              <strong>96&deg</strong> <br />
+              5 PM
+            </p>
+          </span>
+        </div>
+
+        <div class="col">
+          <span class="hour">
+            <p>
+              <strong>95&deg</strong> <br />
+              6 PM
+            </p>
+          </span>
+        </div>
+
+        <div class="col">
+          <span class="hour">
+            <p>
+              <strong>94&deg</strong> <br />
+              7 PM
+            </p>
+          </span>
+        </div>
+
+        <div class="col">
+          <span class="hour">
+            <p>
+              <strong>93&deg</strong> <br />
+              8 PM
+            </p>
+          </span>
+        </div>
+
+        <div class="col">
+          <span class="hour">
+            <p>
+              <strong>92&deg</strong> <br />
+              9 PM
+            </p>
+          </span>
+        </div>
+
+        <div class="col">
+          <span class="hour">
+            <p>
+              <strong>91&deg</strong> <br />
+              10 PM
+            </p>
+          </span>
+        </div>
+
+        <div class="col">
+          <span class="hour">
+            <p>
+              <strong>90&deg</strong> <br />
+              11 PM
+            </p>
+          </span>
+        </div>
+
+        <div class="col">
+          <span class="hour">
+            <p>
+              <strong>89&deg</strong> <br />
+              12 AM
+            </p>
+          </span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="box">
+            <p>
+              THU<br />
+              <i class="fa-solid fa-cloud cloud"></i> <br />
+              90&deg 66&deg
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="box">
+            <p>
+              FRI<br />
+              <i class="fa-solid fa-cloud cloud"></i> <br />
+              89&deg 65&deg
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="box">
+            <p>
+              SAT<br />
+              <i class="fa-sharp fa-solid fa-sun sun"></i><br />
+              98&deg 74&deg
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="box">
+            <p>
+              SUN<br />
+              <i class="fa-sharp fa-solid fa-sun sun"></i><br />
+              98&deg 74&deg
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="box">
+            <p>
+              MON<br />
+              <i class="fa-solid fa-cloud cloud"></i> <br />
+              92&deg 72&deg
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="box">
+            <p>
+              TUE<br />
+              <i class="fa-solid fa-cloud cloud"></i> <br />
+              98&deg 74&deg
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+     <p class="coder">This weather app was coded by <strong>Win-Pa Sandar</strong>👩‍💻.</p>
+    </footer>   
+    <script src="src/search-engine.js"></script>
+    </body>
+</html>

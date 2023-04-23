@@ -1,0 +1,129 @@
+body {
+  background-image: url("images/clouds.jpg");
+}
+
+ul.hw {
+  list-style: none;
+  font-family: roboto;
+  font-size: 16px;
+  color: #6c7854;
+  text-align: left;
+  margin-left: 40%;
+}
+
+ul.today {
+  list-style: none;
+  font-family: roboto;
+  font-size: 24px;
+  color: grey;
+  text-align: left;
+  margin-left: -10%;
+}
+
+.high-low {
+  font-family: roboto;
+  font-size: 20px;
+  text-align: left;
+  font-weight: bold;
+  margin-left: 50%;
+  margin-bottom: 0;
+}
+
+.city {
+  color: #396cdf;
+  font-family: roboto;
+  font-weight: 900;
+  text-align: left;
+  margin: 0;
+}
+
+.current-weather {
+  margin: 20px 30px;
+}
+
+.current-temperature {
+  font-family: roboto;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.today-weather-icon {
+  height: 70px;
+  width: 70px;
+  float: left;
+}
+
+.units {
+  font-size: 20px;
+  position: relative;
+  top: -32px;
+  margin-left: -5px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.sun {
+  color: #f28c38;
+  font-size: 32px;
+}
+
+.moon-rain {
+  font-size: 32px;
+  color: grey;
+}
+
+.cloud {
+  font-size: 32px;
+  color: rgb(155, 146, 146);
+}
+
+.find {
+  font-family: roboto;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: left;
+  color: #396cdf;
+}
+
+.form {
+  font-family: roboto;
+  font-size: 16px;
+}
+
+.hour {
+  border: 1px solid white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.coder {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  text-align: center;
+  margin-top: -30px;
+}
+
+.box {
+  background: rgb(125, 163, 212);
+  border: none;
+  border-radius: 50px;
+  padding: 10px 1px;
+  text-align: center;
+  font-family: roboto;
+}
+
+.container {
+  background: #fffdfb;
+  padding: 40px;
+  margin: 50px auto;
+  border: none;
+  border-radius: 30px;
+  max-width: 900px;
+}
+
+button {
+  margin-left: 20%;
+}
