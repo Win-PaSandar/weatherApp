@@ -66,9 +66,6 @@ function showWeather(response) {
   document.querySelector("#high-temp").innerHTML = Math.round(
     response.data.main.temp_max
   );
-  document.querySelector("#precipitation").innerHTML = Math.round(
-    response.data.precipitation
-  );
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
@@ -79,7 +76,7 @@ function showWeather(response) {
 
 function searchCity(city) {
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(showWeather);
   console.log(apiUrl);
 }
@@ -104,7 +101,7 @@ function searchLocation(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
 
   axios.get(apiUrl).then(showWeather);
 }
