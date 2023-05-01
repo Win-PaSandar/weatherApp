@@ -17,7 +17,11 @@ ul.today {
   font-size: 24px;
   color: grey;
   text-align: left;
-  margin-left: -10%;
+  margin: 0;
+}
+
+ul.current-time {
+  margin: 0;
 }
 
 .high-low {
