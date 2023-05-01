@@ -124,6 +124,11 @@ a:link {
   max-width: 900px;
 }
 
+.footer {
+  margin: 0 auto;
+  padding: 10px;
+}
+
 .github-link {
   text-decoration: none;
   color: rgb(61, 60, 60);
