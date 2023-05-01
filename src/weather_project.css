@@ -34,7 +34,7 @@ ul.today {
   font-family: roboto;
   font-weight: 900;
   text-align: left;
-  margin: 0;
+  margin-top: 3px;
 }
 
 .current-weather {
