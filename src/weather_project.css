@@ -117,8 +117,8 @@ a:link {
 
 .container {
   background: #fffdfb;
-  padding: 40px;
-  margin: 50px auto;
+  padding: 30px;
+  margin: 40px auto;
   border: none;
   border-radius: 30px;
   max-width: 900px;
@@ -126,7 +126,7 @@ a:link {
 
 .footer {
   margin: 0 auto;
-  padding: 10px;
+  padding: 5px;
 }
 
 .github-link {
