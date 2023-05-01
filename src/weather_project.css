@@ -18,6 +18,7 @@ ul.today {
   color: grey;
   text-align: left;
   margin-left: -10%;
+  margin-top: 0;
 }
 
 .high-low {
