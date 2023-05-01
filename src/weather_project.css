@@ -2,15 +2,6 @@ body {
   background-image: url("images/clouds.jpg");
 }
 
-ul.hw {
-  list-style: none;
-  font-family: roboto;
-  font-size: 16px;
-  color: #6c7854;
-  text-align: left;
-  margin-left: 40%;
-}
-
 ul.today {
   list-style: none;
   font-family: roboto;
@@ -22,6 +13,15 @@ ul.today {
 
 ul.current-time {
   margin: 0;
+}
+
+ul.hw {
+  list-style: none;
+  font-family: roboto;
+  font-size: 16px;
+  color: #6c7854;
+  text-align: left;
+  margin-left: 40%;
 }
 
 .high-low {
@@ -124,7 +124,7 @@ a:link {
 
 .footer {
   margin: 0 auto;
-  padding: 10px;
+  padding: 5px;
   font-family: "Courier New", Courier, monospace;
   font-size: 18px;
   text-align: center;
@@ -132,7 +132,7 @@ a:link {
 
 .github-link {
   text-decoration: none;
-  color: rgb(61, 60, 60);
+  color: rgb(22, 22, 22);
 }
 
 .coder {
