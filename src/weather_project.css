@@ -130,3 +130,8 @@ a:link {
   text-decoration: none;
   color: rgb(61, 60, 60);
 }
+
+.coder {
+  color: pink;
+  font-weight: bold;
+}
