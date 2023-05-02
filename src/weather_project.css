@@ -2,17 +2,31 @@ body {
   background-image: url("images/clouds.jpg");
 }
 
+.find {
+  font-family: roboto;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  color: #396cdf;
+}
+
+.form {
+  font-family: roboto;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
 ul.today {
   list-style: none;
   font-family: roboto;
   font-size: 24px;
   color: grey;
   text-align: left;
-  margin: 0;
+  margin: 0 -15px;
 }
 
 ul.current-time {
-  margin: 0;
+  margin: 0 -15px;
 }
 
 ul.hw {
@@ -84,20 +98,6 @@ a:link {
   color: rgb(155, 146, 146);
 }
 
-.find {
-  font-family: roboto;
-  font-size: 24px;
-  font-weight: 600;
-  text-align: left;
-  color: #396cdf;
-}
-
-.form {
-  font-family: roboto;
-  font-size: 16px;
-  margin-bottom: 15px;
-}
-
 .hour {
   border: 1px solid white;
   text-align: center;
@@ -116,7 +116,7 @@ a:link {
 .container {
   background: #fffdfb;
   padding: 30px;
-  margin: 30px auto;
+  margin: 10px auto;
   border: none;
   border-radius: 30px;
   max-width: 900px;
@@ -124,7 +124,7 @@ a:link {
 
 .footer {
   margin: 0 auto;
-  padding: 5px;
+  padding: 2px;
   font-family: "Courier New", Courier, monospace;
   font-size: 18px;
   text-align: center;
@@ -133,6 +133,7 @@ a:link {
 .github-link {
   text-decoration: none;
   color: rgb(22, 22, 22);
+  font-weight: bold;
 }
 
 .coder {
