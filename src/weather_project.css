@@ -16,22 +16,23 @@ body {
   margin-bottom: 15px;
 }
 
-ul.today {
+ul {
   list-style: none;
   font-family: roboto;
+}
+
+.today {
   font-size: 24px;
   color: grey;
   text-align: left;
   margin: 0 -25px;
 }
 
-ul.current-time {
+.current-time {
   margin: 0 -25px;
 }
 
-ul.hwd {
-  list-style: none;
-  font-family: roboto;
+.hwd {
   font-size: 16px;
   color: #6c7854;
   text-align: left;
