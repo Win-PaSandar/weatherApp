@@ -72,13 +72,14 @@ function showWeather(response) {
   document.querySelector("#humidity").innerHTML = Math.round(
     response.data.main.humidity
   );
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].description;
 }
 
 function searchCity(city) {
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(showWeather);
-  console.log(apiUrl);
 }
 
 function search(event) {
