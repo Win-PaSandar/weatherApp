@@ -21,18 +21,18 @@ ul {
   font-family: roboto;
 }
 
-ul.today .current-time {
+.today {
   font-size: 24px;
   color: grey;
   text-align: left;
-  margin: 0 -25px;
+  margin: 0 -30px;
 }
 
-ul.hwd {
+.hwd {
   font-size: 16px;
   color: #6c7854;
   text-align: left;
-  margin-left: 45%;
+  margin-left: 38%;
 }
 
 .high-low {
