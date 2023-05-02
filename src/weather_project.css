@@ -22,11 +22,11 @@ ul.today {
   font-size: 24px;
   color: grey;
   text-align: left;
-  margin: 0 -20px;
+  margin: 0 -25px;
 }
 
 ul.current-time {
-  margin: 0 -20px;
+  margin: 0 -25px;
 }
 
 ul.hw {
