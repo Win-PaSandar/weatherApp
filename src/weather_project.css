@@ -21,6 +21,13 @@ ul {
   font-family: roboto;
   padding: 0;
   margin: 0;
+}
+
+#description {
+  display: block;
+}
+
+#description::first-letter {
   text-transform: capitalize;
 }
 
@@ -60,7 +67,7 @@ ul {
 
 .current-temperature {
   font-family: roboto;
-  font-size: 64px;
+  font-size: 60px;
   font-weight: 600;
   line-height: 1;
 }
@@ -72,7 +79,7 @@ ul {
 }
 
 .units {
-  font-size: 20px;
+  font-size: 16px;
   position: relative;
   top: -32px;
   margin-left: -5px;
