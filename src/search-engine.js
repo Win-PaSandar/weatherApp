@@ -74,6 +74,7 @@ function showWeather(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.condition.description;
+
   document
     .querySelector("#icon")
     .setAttribute(
