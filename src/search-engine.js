@@ -54,13 +54,12 @@ let timeElement = document.querySelector("#current-time");
 let currentTime = new Date();
 timeElement.innerHTML = formatTime(currentTime);
 
-fahrenheitTemperature = response.data.temperature.day;
-
 function showWeather(response) {
   let cityName = document.querySelector("h1");
   cityName = response.data.city;
+  fahrenheitTemperature = response.data.temperature.current;
   document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.temperature.current
+    fahrenheitTemperature
   );
   document.querySelector("#low-temp").innerHTML = Math.round(
     response.data.temperature.minimum
@@ -87,7 +86,7 @@ function showWeather(response) {
 
 function searchCity(city) {
   let apiKey = "1acbot392864443e815e617a5f81390f";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(showWeather);
 }
 
@@ -111,15 +110,15 @@ function searchLocation(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
   let apiKey = "1acbot392864443e815e617a5f81390f";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${longitude}&lat=${latitude}&key=${apiKey}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=imperial`;
 
   axios.get(apiUrl).then(showWeather);
 }
 
 function showFahrenheitTemperature(event) {
   event.preventDefault();
-  fahrenheitLink.classList.add("active");
   celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }

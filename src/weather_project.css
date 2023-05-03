@@ -67,7 +67,7 @@ ul {
 
 .current-temperature {
   font-family: roboto;
-  font-size: 60px;
+  font-size: 54px;
   font-weight: 600;
   line-height: 1;
 }
@@ -75,11 +75,18 @@ ul {
 .today-weather-icon {
   height: 70px;
   width: 70px;
-  float: left;
+  position: relative;
+  top: -13px;
+}
+
+.active {
+  color: #6c7854;
+  cursor: default;
 }
 
 .units {
   font-size: 16px;
+  font-weight: 500;
   position: relative;
   top: -32px;
   margin-left: -5px;
