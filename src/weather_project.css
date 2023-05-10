@@ -163,7 +163,12 @@ a:link {
 .github-link {
   text-decoration: none;
   color: rgb(22, 22, 22);
-  font-weight: bold;
+  font-weight: bolder;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .coder {
