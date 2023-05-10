@@ -25,6 +25,9 @@ ul {
 
 #description {
   display: block;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 #description::first-letter {
@@ -44,15 +47,6 @@ ul {
   margin-left: 45%;
 }
 
-.high-low {
-  font-family: roboto;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: left;
-  margin-left: 44%;
-  margin-bottom: 0;
-}
-
 .city {
   color: #0b5ed7;
   font-family: roboto;
@@ -67,14 +61,14 @@ ul {
 
 .current-temperature {
   font-family: roboto;
-  font-size: 54px;
+  font-size: 48px;
   font-weight: 600;
   line-height: 1;
 }
 
 .today-weather-icon {
-  height: 90px;
-  width: 90px;
+  height: 70px;
+  width: 70px;
   position: relative;
   top: -13px;
 }
